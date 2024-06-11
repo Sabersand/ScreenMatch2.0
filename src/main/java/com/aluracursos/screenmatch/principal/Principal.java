@@ -10,10 +10,10 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class Principal {
-    @Value("${api.key}")
     private Scanner teclado = new Scanner(System.in);
     private ConsumoAPI consumoApi = new ConsumoAPI();
     private final String URL_BASE = "https://www.omdbapi.com/?t=";
+    @Value("${api.key}")
     private final String API_KEY = "OMDB_API";
     private ConvierteDatos conversor = new ConvierteDatos();
     private List<DatosSerie> datosSeries = new ArrayList<>();
